@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d1c">
+  <meta name="description" content="AI อ็อฟ ผู้ช่วยสนทนาภาษาไทย">
+  <title>AI อ็อฟ — ผู้ช่วยส่วนตัว</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">✦</div><div><b>AI อ็อฟ</b><small>YOUR THAI AI FRIEND</small></div></div>
+      <button class="new-chat" id="newChat">＋ <span>แชตใหม่</span></button>
+      <div class="side-label">เมนู</div>
+      <button class="side-link active" id="homeBtn">▣ <span>สนทนา</span></button>
+      <div class="side-bottom"><div class="profile"><div class="avatar">อ</div><div><b>AI อ็อฟ</b><small>ผู้ช่วยภาษาไทย</small></div><span class="online-dot"></span></div></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn mobile-menu" id="menuBtn" aria-label="เมนู">☰</button>
+        <div class="top-brand"><span class="mini-mark">✦</span> AI อ็อฟ</div>
+        <div class="top-status"><i></i> พร้อมช่วยเหลือ</div>
+        <button class="icon-btn" id="clearBtn" title="ล้างแชต" aria-label="ล้างแชต">⌫</button>
+      </header>
+
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="hero-orb"><span>✦</span></div>
+          <div class="eyebrow">ยินดีต้อนรับสู่ AI อ็อฟ</div>
+          <h1>วันนี้มีอะไรให้<br><em>อ็อฟช่วยไหม?</em></h1>
+          <p>ถามได้ทุกเรื่อง คุยเป็นภาษาไทยได้เลยครับ</p>
+          <div class="suggestions">
+            <button class="suggestion">📚 ช่วยสอนการบ้านหน่อย</button>
+            <button class="suggestion">💡 ช่วยคิดไอเดียใหม่ ๆ</button>
+            <button class="suggestion">✍️ ช่วยเขียนข้อความให้หน่อย</button>
+          </div>
+        </div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+      </section>
+
+      <footer class="composer-wrap">
+        <form class="composer" id="chatForm">
+          <textarea id="messageInput" rows="1" maxlength="8000" placeholder="พิมพ์ข้อความถึง AI อ็อฟ..." aria-label="ข้อความ"></textarea>
+          <div class="composer-bottom"><span>AI อ็อฟอาจตอบผิดพลาดได้ โปรดตรวจสอบข้อมูลสำคัญ</span><button class="send-btn" id="sendBtn" type="submit" aria-label="ส่งข้อความ">➤</button></div>
+        </form>
+        <div class="footer-note">สร้างด้วยความตั้งใจ 💙</div>
+      </footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
